@@ -1,0 +1,9 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12
+"GET / HTTP/1.1" 200 12
+"GET /about/ HTTP/1.1" 200 8
+J:\GeekBrains\Django_GB\my_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+J:\GeekBrains\Django_GB\my_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+J:\GeekBrains\Django_GB\my_project\settings.py changed, reloading.
