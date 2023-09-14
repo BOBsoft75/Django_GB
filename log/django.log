@@ -120,3 +120,272 @@ INFO 2023-09-11 18:09:53,792 basehttp 1616 9600 "GET /main HTTP/1.1" 301 0
 INFO 2023-09-11 18:09:53,794 basehttp 1616 9364 "GET /main/ HTTP/1.1" 200 114
 INFO 2023-09-11 18:10:04,077 basehttp 1616 9364 "GET /about_me HTTP/1.1" 301 0
 INFO 2023-09-11 18:10:04,079 basehttp 1616 4956 "GET /about_me/ HTTP/1.1" 200 103
+INFO 2023-09-14 10:56:27,167 autoreload 13440 6696 Watching for file changes with StatReloader
+INFO 2023-09-14 10:56:43,848 basehttp 13440 1476 "GET / HTTP/1.1" 200 12
+WARNING 2023-09-14 10:56:44,065 log 13440 1476 Not Found: /favicon.ico
+WARNING 2023-09-14 10:56:44,066 basehttp 13440 1476 "GET /favicon.ico HTTP/1.1" 404 3322
+INFO 2023-09-14 11:57:02,970 autoreload 2800 11972 Watching for file changes with StatReloader
+INFO 2023-09-14 11:57:07,022 basehttp 2800 13856 "GET / HTTP/1.1" 200 12
+WARNING 2023-09-14 11:57:07,296 log 2800 13856 Not Found: /favicon.ico
+WARNING 2023-09-14 11:57:07,297 basehttp 2800 13856 "GET /favicon.ico HTTP/1.1" 404 3322
+WARNING 2023-09-14 11:57:42,031 log 2800 13856 Not Found: /order_view
+WARNING 2023-09-14 11:57:42,032 basehttp 2800 13856 "GET /order_view HTTP/1.1" 404 3319
+WARNING 2023-09-14 12:00:18,295 log 2800 13856 Not Found: /clients
+WARNING 2023-09-14 12:00:18,296 basehttp 2800 13856 "GET /clients HTTP/1.1" 404 3310
+WARNING 2023-09-14 12:00:28,486 log 2800 13856 Not Found: /clients/
+WARNING 2023-09-14 12:00:28,487 basehttp 2800 13856 "GET /clients/ HTTP/1.1" 404 3313
+INFO 2023-09-14 12:00:56,227 autoreload 2800 11972 J:\GeekBrains\Django_GB\my_project\settings.py changed, reloading.
+INFO 2023-09-14 12:00:56,673 autoreload 4060 14484 Watching for file changes with StatReloader
+INFO 2023-09-14 12:01:01,093 basehttp 4060 1288 "GET / HTTP/1.1" 200 12
+WARNING 2023-09-14 12:01:09,376 log 4060 1288 Not Found: /clients
+WARNING 2023-09-14 12:01:09,377 basehttp 4060 1288 "GET /clients HTTP/1.1" 404 3310
+INFO 2023-09-14 12:01:33,665 autoreload 4060 14484 J:\GeekBrains\Django_GB\my_project\settings.py changed, reloading.
+INFO 2023-09-14 12:01:34,128 autoreload 3764 3868 Watching for file changes with StatReloader
+INFO 2023-09-14 12:01:36,436 basehttp 3764 13920 "GET / HTTP/1.1" 200 12
+INFO 2023-09-14 12:01:47,003 basehttp 3764 13920 "GET /heads HTTP/1.1" 301 0
+INFO 2023-09-14 12:01:47,005 basehttp 3764 7120 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-14 12:01:49,865 basehttp 3764 7120 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-14 12:01:50,451 basehttp 3764 7120 "GET /heads/ HTTP/1.1" 200 5
+WARNING 2023-09-14 12:01:56,965 log 3764 7120 Not Found: /clients
+WARNING 2023-09-14 12:01:56,966 basehttp 3764 7120 "GET /clients HTTP/1.1" 404 3310
+INFO 2023-09-14 12:02:19,237 autoreload 3764 3868 J:\GeekBrains\Django_GB\my_project\urls.py changed, reloading.
+INFO 2023-09-14 12:02:19,676 autoreload 8592 3752 Watching for file changes with StatReloader
+INFO 2023-09-14 12:02:23,646 basehttp 8592 16876 "GET / HTTP/1.1" 200 12
+INFO 2023-09-14 12:02:34,309 basehttp 8592 16876 "GET /clients HTTP/1.1" 301 0
+ERROR 2023-09-14 12:02:34,424 log 8592 16808 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:02:34,427 basehttp 8592 16808 "GET /clients/ HTTP/1.1" 500 82759
+ERROR 2023-09-14 12:02:35,208 log 8592 16808 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:02:35,212 basehttp 8592 16808 "GET /clients/ HTTP/1.1" 500 82485
+ERROR 2023-09-14 12:07:17,365 log 8592 16808 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:07:17,369 basehttp 8592 16808 "GET /clients/ HTTP/1.1" 500 82622
+WARNING 2023-09-14 12:07:17,427 log 8592 16808 Not Found: /favicon.ico
+WARNING 2023-09-14 12:07:17,428 basehttp 8592 16808 "GET /favicon.ico HTTP/1.1" 404 4032
+INFO 2023-09-14 12:07:25,308 autoreload 13684 7980 Watching for file changes with StatReloader
+INFO 2023-09-14 12:07:27,288 basehttp 13684 3872 "GET / HTTP/1.1" 200 12
+ERROR 2023-09-14 12:07:36,672 log 13684 3872 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:07:36,676 basehttp 13684 3872 "GET /clients/ HTTP/1.1" 500 83102
+ERROR 2023-09-14 12:07:43,873 log 13684 3872 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:07:43,878 basehttp 13684 3872 "GET /clients/ HTTP/1.1" 500 82828
+INFO 2023-09-14 12:09:32,401 autoreload 6284 10516 Watching for file changes with StatReloader
+INFO 2023-09-14 12:09:35,350 basehttp 6284 17272 "GET / HTTP/1.1" 200 12
+ERROR 2023-09-14 12:09:42,303 log 6284 17272 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:09:42,307 basehttp 6284 17272 "GET /clients/ HTTP/1.1" 500 83102
+ERROR 2023-09-14 12:09:44,235 log 6284 17272 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:09:44,238 basehttp 6284 17272 "GET /clients/ HTTP/1.1" 500 82828
+INFO 2023-09-14 12:12:18,825 autoreload 3680 4056 Watching for file changes with StatReloader
+INFO 2023-09-14 12:12:20,394 basehttp 3680 6500 "GET / HTTP/1.1" 200 12
+ERROR 2023-09-14 12:12:26,447 log 3680 6500 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:12:26,451 basehttp 3680 6500 "GET /clients/ HTTP/1.1" 500 83102
+ERROR 2023-09-14 12:12:28,024 log 3680 6500 Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\hw2_app\views.py", line 10, in client_view
+    return render(request, 'hw2_app/clients.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\GeekBrains\Django_GB\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hw2_app/clients.html
+ERROR 2023-09-14 12:12:28,029 basehttp 3680 6500 "GET /clients/ HTTP/1.1" 500 82828
+INFO 2023-09-14 12:14:21,348 autoreload 13616 14816 Watching for file changes with StatReloader
+INFO 2023-09-14 12:14:23,763 basehttp 13616 11024 "GET / HTTP/1.1" 200 12
+INFO 2023-09-14 12:14:30,361 basehttp 13616 11024 "GET /clients/ HTTP/1.1" 200 1365
+INFO 2023-09-14 12:14:51,907 basehttp 13616 11024 "GET /orders HTTP/1.1" 301 0
+INFO 2023-09-14 12:14:51,915 basehttp 13616 15076 "GET /orders/ HTTP/1.1" 200 1726
+INFO 2023-09-14 12:14:55,582 basehttp 13616 15076 "GET /orders/?last_7_days=7 HTTP/1.1" 200 1726
+INFO 2023-09-14 12:14:57,216 basehttp 13616 15076 "GET /orders/?last_30_days=30 HTTP/1.1" 200 1726
+INFO 2023-09-14 12:14:58,703 basehttp 13616 15076 "GET /orders/?last_365_days=365 HTTP/1.1" 200 1726
+INFO 2023-09-14 12:14:59,875 basehttp 13616 15076 "GET /orders/?last_30_days=30 HTTP/1.1" 200 1726
+INFO 2023-09-14 12:15:00,848 basehttp 13616 15076 "GET /orders/?last_7_days=7 HTTP/1.1" 200 1726
+INFO 2023-09-14 12:15:02,690 basehttp 13616 15076 "GET /orders/?all_orders= HTTP/1.1" 200 1726
+INFO 2023-09-14 12:15:49,955 basehttp 13616 15076 "GET /products HTTP/1.1" 301 0
+INFO 2023-09-14 12:15:49,962 basehttp 13616 8944 "GET /products/ HTTP/1.1" 200 1443
+INFO 2023-09-14 14:25:50,519 autoreload 14620 13144 Watching for file changes with StatReloader
+INFO 2023-09-14 14:25:52,340 basehttp 14620 17376 "GET / HTTP/1.1" 200 12
+WARNING 2023-09-14 14:25:52,450 log 14620 17376 Not Found: /favicon.ico
+WARNING 2023-09-14 14:25:52,450 basehttp 14620 17376 "GET /favicon.ico HTTP/1.1" 404 4032
+INFO 2023-09-14 14:26:04,163 basehttp 14620 17376 "GET /clients/ HTTP/1.1" 200 7670
+INFO 2023-09-14 14:26:33,888 basehttp 14620 17376 "GET /clients/ HTTP/1.1" 200 7670
+INFO 2023-09-14 14:26:39,691 basehttp 14620 17376 "GET /products/ HTTP/1.1" 200 61280
+INFO 2023-09-14 14:26:59,429 basehttp 14620 17376 "GET /orders/ HTTP/1.1" 200 18093
+INFO 2023-09-14 14:27:02,858 basehttp 14620 17376 "GET /orders/?last_7_days=7 HTTP/1.1" 200 1726
+INFO 2023-09-14 14:27:03,678 basehttp 14620 17376 "GET /orders/?last_30_days=30 HTTP/1.1" 200 1726
+INFO 2023-09-14 14:27:04,423 basehttp 14620 17376 "GET /orders/?last_365_days=365 HTTP/1.1" 200 1726
+INFO 2023-09-14 14:27:05,447 basehttp 14620 17376 "GET /orders/?last_30_days=30 HTTP/1.1" 200 1726
+INFO 2023-09-14 14:27:20,672 basehttp 14620 17376 "GET /orders/?last_7_days=7 HTTP/1.1" 200 1726
+INFO 2023-09-14 14:27:21,735 basehttp 14620 17376 "GET /orders/?all_orders= HTTP/1.1" 200 18093
+INFO 2023-09-14 14:29:36,645 autoreload 14152 15668 Watching for file changes with StatReloader
+INFO 2023-09-14 14:29:39,081 basehttp 14152 10248 "GET / HTTP/1.1" 200 12
+INFO 2023-09-14 14:29:46,240 basehttp 14152 10248 "GET /orders/ HTTP/1.1" 200 18096
+INFO 2023-09-14 14:29:50,796 basehttp 14152 10248 "GET /orders/?last_7_days=7 HTTP/1.1" 200 2973
+INFO 2023-09-14 14:29:54,351 basehttp 14152 10248 "GET /orders/?last_30_days=30 HTTP/1.1" 200 4460
+INFO 2023-09-14 14:29:58,367 basehttp 14152 10248 "GET /orders/?last_365_days=365 HTTP/1.1" 200 4460
+INFO 2023-09-14 14:30:32,377 basehttp 14152 10248 "GET /orders/?last_30_days=30 HTTP/1.1" 200 4460
+INFO 2023-09-14 14:30:33,244 basehttp 14152 10248 "GET /orders/?last_7_days=7 HTTP/1.1" 200 2973
+INFO 2023-09-14 14:30:33,952 basehttp 14152 10248 "GET /orders/?last_365_days=365 HTTP/1.1" 200 4969
+INFO 2023-09-14 14:30:38,130 basehttp 14152 10248 "GET /orders/?last_30_days=30 HTTP/1.1" 200 4460
+INFO 2023-09-14 14:30:39,059 basehttp 14152 10248 "GET /orders/?last_7_days=7 HTTP/1.1" 200 2973
+INFO 2023-09-14 14:30:40,552 basehttp 14152 10248 "GET /orders/?last_365_days=365 HTTP/1.1" 200 4969
+INFO 2023-09-14 14:30:41,746 basehttp 14152 10248 "GET /orders/?all_orders= HTTP/1.1" 200 18096

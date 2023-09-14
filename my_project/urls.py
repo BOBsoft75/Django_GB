@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('my_app.urls')),
     path('', include('my2_app.urls')),
     path('', include('hw1_app.urls')),
+    path('', include('hw2_app.urls')),
 
 ]

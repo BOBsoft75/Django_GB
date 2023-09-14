@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} [Заголовок страницы] {% endblock %}</title>
+    <!-- Подключаем bootstrap CSS с сайта BootstrapCDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Создаем контейнер для содержимого -->
+    <div class="container">
+        <!-- Создаем строку для размещения элементов -->
+        <div class="row">
+            <!-- Создаем колонку, занимающую 12 единиц ширины -->
+            <div class="col-12">
+                {% block content %}[content]{% endblock %}
+            </div>
+        </div>
+    </div>
+    <!-- Подключаем jQuery и bootstrap JS с сайта BootstrapCDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'hw2_app/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+    <h1>Список клиентов</h1>
+    <table class="table">
+        <tr class="table-dark">
+            <th>Имя</th>
+            <th>Email</th>
+            <th>Телефон</th>
+            <th>Адрес</th>
+            <th>Дата регистрации</th>
+        </tr>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client.name.title }}</td>
+            <td>{{ client.email }}</td>
+            <td>{{ client.phone }}</td>
+            <td>{{ client.address }}</td>
+            <td>{{ client.date_registration }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
